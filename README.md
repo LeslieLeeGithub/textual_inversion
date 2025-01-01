@@ -64,7 +64,26 @@ python main.py --base configs/latent-diffusion/txt2img-1p4B-finetune.yaml
                --gpus 0, 
                --data_root /path/to/directory/with/images
                --init_word <initialization_word>
+
+
 ```
+<!-- python main.py --base configs/latent-diffusion/txt2img-1p4B-finetune.yaml \
+               -t \
+               --actual_resume /path/to/pretrained/model.ckpt \
+               -n super_professor \
+               --gpus 0 \
+               --data_root /Users/xiaochentian/Desktop/Research_Project/Textual_Inversion/textual_inversion/img/prompt \
+               --init_word professor
+
+
+python main.py --base configs/latent-diffusion/txt2img-1p4B-finetune.yaml \
+               -t \
+               --actual_resume models/ldm/text2img-large/model.ckpt \
+               -n super_professor \
+               --gpus 0 \
+               --data_root /Users/xiaochentian/Desktop/Research_Project/Textual_Inversion/textual_inversion/img/prompt \
+               --init_word professor -->
+
 
 where the initialization word should be a single-token rough description of the object (e.g., 'toy', 'painting', 'sculpture'). If the input is comprised of more than a single token, you will be prompted to replace it.
 
