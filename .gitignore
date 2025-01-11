@@ -1,3 +1,5 @@
 # Ignore model files
 models/ldm/
 models/rdm
+src/clip
+src/taming-transformers
